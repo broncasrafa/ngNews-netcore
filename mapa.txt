@@ -1,0 +1,4 @@
+- categorias
+- fontes de noticias = sources
+
+Cannot run when setup is in progress

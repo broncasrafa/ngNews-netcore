@@ -1,0 +1,9 @@
+C:\_MyProjects\_.NET Core Angular\Projects\ngNews\src\ngNews.Entity\bin\Debug\netcoreapp3.1\ngNews.Entity.deps.json
+C:\_MyProjects\_.NET Core Angular\Projects\ngNews\src\ngNews.Entity\bin\Debug\netcoreapp3.1\ngNews.Entity.dll
+C:\_MyProjects\_.NET Core Angular\Projects\ngNews\src\ngNews.Entity\obj\Debug\netcoreapp3.1\ngNews.Entity.csprojAssemblyReference.cache
+C:\_MyProjects\_.NET Core Angular\Projects\ngNews\src\ngNews.Entity\obj\Debug\netcoreapp3.1\ngNews.Entity.AssemblyInfoInputs.cache
+C:\_MyProjects\_.NET Core Angular\Projects\ngNews\src\ngNews.Entity\obj\Debug\netcoreapp3.1\ngNews.Entity.AssemblyInfo.cs
+C:\_MyProjects\_.NET Core Angular\Projects\ngNews\src\ngNews.Entity\bin\Debug\netcoreapp3.1\ngNews.Entity.pdb
+C:\_MyProjects\_.NET Core Angular\Projects\ngNews\src\ngNews.Entity\obj\Debug\netcoreapp3.1\ngNews.Entity.csproj.CoreCompileInputs.cache
+C:\_MyProjects\_.NET Core Angular\Projects\ngNews\src\ngNews.Entity\obj\Debug\netcoreapp3.1\ngNews.Entity.dll
+C:\_MyProjects\_.NET Core Angular\Projects\ngNews\src\ngNews.Entity\obj\Debug\netcoreapp3.1\ngNews.Entity.pdb

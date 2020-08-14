@@ -1,0 +1,64 @@
+.ft_theme_switcher .style_list .style .campos {
+  margin-bottom: 2px;
+  overflow: hidden;
+}
+
+.ft_theme_switcher .style_list .style .campos .field {
+  color: #969290;
+  font-size: 1rem;
+  font-weight: 400;
+  /* width: 14.5625rem; */
+  width: 100%;
+  margin-top: .5rem;
+  background-color: transparent;
+  border: 0;
+  padding-left: 0.95rem;
+  padding-right: 1rem;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid #d6d0cc;
+}
+
+.ft_theme_switcher .style_list .style .campos .field:focus {
+  border: 0;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border-bottom: 1px solid #ec7000;
+}
+
+.ft_theme_switcher .style_list .style .campos .field:focus::placeholder {
+  color: #969290;
+}
+
+
+.search-field {
+  color: #969290;
+  font-family: 'Itau Text', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 14.5625rem;
+  width: 100%;
+  margin-top: .5rem;
+  background-color: transparent;
+  border: 0;
+  padding-left: 1.2rem;
+  padding-right: 1rem;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid #d6d0cc;
+}
+
+.search-field:focus {
+  border: 0;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border-bottom: 1px solid #ec7000;
+}
+
+.search-field:focus::placeholder {
+  color: #969290;
+}
+
+.search-field__btn-search, .btn-primary {
+  font-weight: 400;
+  font-size: 1rem;
+  padding: .35rem 1.5rem .15rem 1.5rem;
+}

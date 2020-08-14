@@ -1,0 +1,59 @@
+<!-- <div class="ticker__logo">
+  <img src="../../../../assets/template/img/sources/transparent/g1.png" alt="">
+</div> -->
+<div class="ticker-wrap" *ngIf="type_ticker === '1'">
+  <div class="ticker">
+    <div class="ticker__item" *ngFor="let n of noticias">
+      {{ n.Title.toUpperCase() }}
+      <span class="ticker__square">■</span>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- tipo 2 -->
+<section class="news-wrapper" *ngIf="type_ticker === '2'">
+  <div>
+    <h3>NEWS</h3>
+  </div>
+  <div class="news">
+    <!-- <ul>
+      <li>JOGAMOS ASSASSIN'S CREED VALHALLA! Veja nosso gameplay e impressões - Adrenaline</li>
+    <li>ATUAÇÕES: Pedro aplica “lei do ex” de novo, e Michael decide na etapa final - LANCE! - LANCE!</li>
+    <li>Mayra Cardi detona Arthur Aguiar sobre divisão de bens: 'Abuso financeiro' - Notícias da TV</li>
+    <li>Brasil tem mais 631 mortes por coronavírus em 24h e total passa de 72 mil - UOL Notícias</li>
+    <li>Após vitória do Flamengo, Jesus elogia postura do Fluminense e questiona expulsão de Gabigol: "Coisa de louco" - globoesporte.com</li>
+    <li>José Aldo reconhece superioridade de rival e pede empatia aos críticos - UOL Esporte</li>
+    <li>Polícia mostra vídeo feito dentro de lago onde Naya Rivera desapareceu; veja - TNH1</li>
+    </ul> -->
+
+    <div><span>JOGAMOS ASSASSIN'S CREED VALHALLA! Veja nosso gameplay e impressões - Adrenaline</span></div>
+    <div><span>ATUAÇÕES: Pedro aplica “lei do ex” de novo, e Michael decide na etapa final - LANCE! - LANCE!</span></div>
+    <div><span>Mayra Cardi detona Arthur Aguiar sobre divisão de bens: 'Abuso financeiro' - Notícias da TV</span></div>
+    <div><span>Brasil tem mais 631 mortes por coronavírus em 24h e total passa de 72 mil - UOL Notícias</span></div>
+    <div><span>Após vitória do Flamengo, Jesus elogia postura do Fluminense e questiona expulsão de Gabigol: "Coisa de louco" - globoesporte.com</span></div>
+    <div><span>José Aldo reconhece superioridade de rival e pede empatia aos críticos - UOL Esporte</span></div>
+    <div><span>Polícia mostra vídeo feito dentro de lago onde Naya Rivera desapareceu; veja - TNH1</span></div>
+
+  </div>
+</section>
+
+
+
+<div class="container_ticker3" *ngIf="type_ticker === '3'">
+  <div class="ticker3">
+    <div class="ticker3__title">
+      <h5>NEWS</h5>
+    </div>
+    <div class="ticker3__news">
+      <marquee>
+        <p>
+          JOGAMOS ASSASSIN'S CREED VALHALLA! Veja nosso gameplay e impressões - Adrenaline<span class="ticker3__news_space-between"><i class="icon s7-square-fill"></i></span>
+          ATUAÇÕES: Pedro aplica “lei do ex” de novo, e Michael decide na etapa final - LANCE! - LANCE! <span class="ticker3__news_space-between"><i class="icon s7-square-fill"></i></span>
+          Mayra Cardi detona Arthur Aguiar sobre divisão de bens: 'Abuso financeiro' - Notícias da TV <span class="ticker3__news_space-between"><i class="icon s7-square-fill"></i></span>
+        </p>
+      </marquee>
+    </div>
+  </div>
+</div>

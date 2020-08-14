@@ -1,0 +1,24 @@
+<div class="page-head">
+  <h2>fontes</h2>
+</div>
+<div class="main-content">
+  <div class="row" *ngIf="sources">
+    <div class="col-lg-4" *ngFor="let item of sources">
+      <div class="card">
+        <div class="card-header">
+          <a href="/sources/{{item.Id}}">{{ item.Name }}</a>
+        </div>
+        <div class="card-body">
+          <p>{{ item.Description }}</p>
+          <p>
+            <a href="{{item.Url}}" target="_blank">{{item.Url}}</a>
+            <br />
+            {{ item.Category }} - {{item.Country}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-filtros-lateral [filtros]="dadosFiltros" [titulo]="tituloFiltro" [tipo]="tipoFiltro" (filtrar)="filtrar($event)"></app-filtros-lateral>

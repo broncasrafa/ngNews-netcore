@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QUwaW/uH0lEzwwCAcq63sQ+Bk6ZlDXjUgq0EoSRZT4z+0n8JmmZIiXbUI78cd0VzOWwMkk5mC2qwYdVA2D2ujA==",
+  "success": true,
+  "projectFilePath": "C:\\_MyProjects\\_.NET Core Angular\\Projects\\ngNews\\src\\ngNews.Entity\\ngNews.Entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rafael\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

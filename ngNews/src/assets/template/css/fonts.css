@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Stroke 7';
+  src:  url('../fonts/Stroke-7.eot?f72xkr');
+  src:  url('../fonts/Stroke-7.eot?f72xkr#iefix') format('embedded-opentype'),
+    url('../fonts/Stroke-7.ttf?f72xkr') format('truetype'),
+    url('../fonts/Stroke-7.woff?f72xkr') format('woff'),
+    url('../fonts/Stroke-7.svg?f72xkr#Stroke-7') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

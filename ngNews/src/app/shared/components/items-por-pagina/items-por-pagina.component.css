@@ -1,0 +1,30 @@
+
+/*
+##Device = Desktop
+##Screen = 12881px to higher resolution desktops
+*/
+@media (min-width: 1024px) {
+  .select-field {
+    width: 66% !important;
+  }
+}
+
+
+/*
+##Device = Mobile landscape
+*/
+@media(min-width: 666px) and (max-width: 812px) and (orientation: landscape) {
+  .select-field {
+    width: 73% !important;
+  }
+}
+
+/*
+##Device = Most of smartphones mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media(min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+  .select-field {
+    width: 20% !important;
+  }
+}

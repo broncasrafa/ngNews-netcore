@@ -1,0 +1,27 @@
+<div class="band" *ngIf="noticias">
+  <div class="item-{{i}}" *ngFor="let item of noticias.Articles; let i = index">
+        <a href="{{ item.Url }}" class="card" target="_blank">
+          <div class="thumb" [style.background-image]="img[i] | tratarImagem"></div>
+          <article>
+            <h1>{{ item.Title }}</h1>
+            <p></p>
+            <span>
+              {{ item.Source.Name }}
+              <span style='font-size: 10pt;'>•</span>
+              <span style='font-size: 8pt;'>{{ item.PublishedAt | localeDate }}</span>
+            </span>
+          </article>
+        </a>
+  </div>
+</div>
+
+<div class="row" *ngIf="noticias && noticias.TotalResults === 0">
+  <div class="col-sm-12">
+    <div class="alert alert-info alert-icon" role="alert">
+      <div class="icon"><span class="s7-info"></span></div>
+      <div class="message">
+        <strong>Ops!</strong> Notícias não encontradas.
+      </div>
+    </div>
+  </div>
+</div>

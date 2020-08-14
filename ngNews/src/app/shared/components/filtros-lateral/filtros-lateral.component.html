@@ -1,0 +1,97 @@
+<div class="ft_theme_switcher ocult">
+  <div class="toggle"><i class="icon s7-filter"></i></div>
+  <div class="desc">
+    <h3>filtros - {{ titulo }}</h3>
+    <p>Selecione os filtros desejados</p>
+  </div>
+  <div class="style_list">
+    <div class="style">
+      <div class="campos">
+
+        <!-- filtros para sources -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group" *ngIf="mostrarBarraPesquisa">
+              <label>procurar por</label>
+              <input class="search-field" type="text" placeholder="digite aqui o termo de pesquisa" [(ngModel)]="filtroData.Term">
+            </div>
+
+            <div class="form-group" *ngIf="filtros && filtros.ListaCategorias">
+              <label>categoria</label>
+              <select class="field" [(ngModel)]="filtroData.IdCategoria">
+                <option [ngValue]="undefined" selected>selecione...</option>
+                <option *ngFor="let item of filtros.ListaCategorias" [value]="item">{{ item }}</option>
+              </select>
+            </div>
+            <div class="form-group" *ngIf="filtros && filtros.ListaIdiomas">
+              <label>idioma</label>
+              <select class="field" [(ngModel)]="filtroData.IdIdioma">
+                <option [ngValue]="undefined" selected>selecione...</option>
+                <option *ngFor="let item of filtros.ListaIdiomas" [value]="item">{{ item }}</option>
+              </select>
+            </div>
+            <div class="form-group" *ngIf="filtros && filtros.ListaPaises">
+              <label>país</label>
+              <select class="field" [(ngModel)]="filtroData.IdPais">
+                <option [ngValue]="undefined" selected>selecione...</option>
+                <option *ngFor="let item of filtros.ListaPaises" [value]="item">{{ item }}</option>
+              </select>
+            </div>
+            <div class="form-group" *ngIf="filtros && filtros.ListaFontes">
+              <label>fontes de notícias</label>
+              <select class="field" [(ngModel)]="filtroData.Sources" multiple>
+                <option [ngValue]="undefined" selected>selecione...</option>
+                <option *ngFor="let item of filtros.ListaFontes" [value]="item.Id">{{ item.Name }}</option>
+              </select>
+              <!-- <ng-select [items]="filtros.ListaFontes"
+                         bindLabel="Name"
+                         bindValue="Id"
+                         placeholder="selecione..."
+                         appendTo="body"
+                         multiple="true"
+                         [(ngModel)]="filtroData.Sources">
+              </ng-select> -->
+            </div>
+
+            <div class="form-group">
+              <label>de</label>
+              <input class="search-field date datetimepicker" type="text" data-min-view="2" data-date-format="yyyy-mm-dd" placeholder="digite aqui a date de" [(ngModel)]="filtroData.DateTo" >
+            </div>
+            <div class="form-group">
+              <label>até</label>
+              <input  class="search-field date datetimepicker" type="text" data-min-view="2" data-date-format="yyyy-mm-dd"placeholder="digite aqui a date até" [(ngModel)]="filtroData.DateFrom">
+            </div>
+            <div class="form-group" *ngIf="filtros && filtros.ListaSortBy">
+              <label>ordernado por</label>
+              <select class="field" [(ngModel)]="filtroData.IdSortBy">
+                <option [ngValue]="undefined" selected>selecione...</option>
+                <option *ngFor="let item of filtros.ListaSortBy" [value]="item">{{ item }}</option>
+              </select>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="text-inverse">
+          <button class="btn btn-space btn-primary" type="button" (click)="filterData()"
+                  [disabled]="!this.filtroData.Term &&
+                              !this.filtroData.IdCategoria &&
+                              !this.filtroData.IdIdioma &&
+                              !this.filtroData.IdPais &&
+                              !this.filtroData.Sources &&
+                              !this.filtroData.DateTo &&
+                              !this.filtroData.DateFrom &&
+                              !this.filtroData.IdSortBy">filtrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="switchers">
+    <div class="switch">
+      <div class="switch-title">RTL</div>
+      <div class="switch-button switch-button-sm"><input type='checkbox' name='check1' id='switchrtl'><span>
+          <label for="switchrtl"></label></span>
+      </div>
+    </div>
+  </div> -->
+</div>

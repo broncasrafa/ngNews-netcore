@@ -1,0 +1,11 @@
+<div class="page-head">
+  <h2>notícias do Brasil e pelo mundo</h2>
+</div>
+<div class="main-content" *ngIf="noticias">
+  <app-items-por-pagina (exibir)="exibirNoticiasPorPagina($event)"></app-items-por-pagina>
+  <app-noticias [noticias]="noticias"></app-noticias>
+</div>
+
+<app-filtros-lateral [filtros]="dadosFiltros" [titulo]="tituloFiltro" [tipo]="tipoFiltro" [mostrarBarraPesquisa]="showSearchText" (filtrar)="filtrar($event)"></app-filtros-lateral>
+
+<app-breaking-news-ticker [type_ticker]="tipoBreakingNewsTicker"></app-breaking-news-ticker>
